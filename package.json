@@ -2,7 +2,6 @@
   "name": "musicify",
   "version": "1.0.0",
   "description": "Spotify Web Player and Lyrics Finder",
-  "main": "server/server.js",
   "scripts": {
     "start": "node server.js",
     "postinstall": "cd ./client && yarn"
