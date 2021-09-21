@@ -4,10 +4,8 @@
   "description": "Spotify Web Player and Lyrics Finder",
   "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-prebuild": "cd client && (npm install && (cd ../server && (npm install && cd ..)))",
-    "build": "cd client && (npm run build && cd ..)",
-    "start": "node server/server.js"
+    "start": "node server.js",
+    "postinstall": "cd ./client && yarn"
   },
   "repository": {
     "type": "git",
