@@ -3,6 +3,7 @@ const express = require("express")
 const cors = require("cors")
 const lyricsFinder = require("lyrics-finder")
 const SpotifyWebApi = require("spotify-web-api-node")
+const path = require("path")
 
 const app = express()
 app.use(cors())
