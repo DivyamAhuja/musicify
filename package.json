@@ -1,0 +1,29 @@
+{
+  "name": "musicify",
+  "version": "1.0.0",
+  "description": "Spotify Web Player and Lyrics Finder",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-prebuild": "cd client && (npm install && (cd ../server && (npm install && cd ..)))",
+    "build": "cd client && (npm run build && cd ..)",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DivyamAhuja/musicify.git"
+  },
+  "author": "Divyam Ahuja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DivyamAhuja/musicify/issues"
+  },
+  "homepage": "https://github.com/DivyamAhuja/musicify",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "lyrics-finder": "^21.7.0",
+    "spotify-web-api-node": "^5.0.2"
+  }
+}
